@@ -1,5 +1,5 @@
 {% set name = "napari-trait2d" %}
-{% set version = "0.1.2" %}
+{% set version = "0.1.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-trait2d-{{ version }}.tar.gz
-  sha256: 4bf716da6adbe10d7e0770f61aa9cbf82401cdd1656d5ce3de6a4ae335ad875a
+  sha256: bda41e7a1a8415411f21f3dec33b1cd0727117edf3993d166791bf648ccdfe63
 
 build:
   noarch: python
@@ -24,6 +24,8 @@ requirements:
     - numpy
     - python >=3.8
     - qtpy
+    - scikit-image
+    - superqt
 
 test:
   imports:
